@@ -1,0 +1,28 @@
+{
+  "name": "agent-survival-skill",
+  "version": "0.1.0",
+  "description": "A survival skill that helps agents recover from budget and token exhaustion.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "demo": "node --no-warnings --loader ts-node/esm src/demo.ts",
+    "example:runtime": "node --no-warnings --loader ts-node/esm examples/runtime-agent.ts",
+    "record:demo": "powershell -ExecutionPolicy Bypass -File scripts/record-demo.ps1",
+    "selftest": "node --no-warnings --loader ts-node/esm src/selftest.ts"
+  },
+  "keywords": [
+    "agent",
+    "ai",
+    "skill",
+    "budget",
+    "tokens",
+    "survival"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
